@@ -6,4 +6,4 @@ libnotify = dependency('libnotify')
 boost     = dependency('boost', modules: ['system'])
 threads   = dependency('threads')
 
-executable('pomodoro', 'main.cc', 'Pomodoro.cc', 'NotifyService.cc' , dependencies: [libnotify, boost, threads])
+executable('pomodoro', 'main.cc', 'Pomodoro.cc', 'NotifyService.cc' , dependencies: [libnotify, boost, threads], install: true)
